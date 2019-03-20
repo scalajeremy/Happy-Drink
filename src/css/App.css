@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 2s linear;
+  height: 40vmin;
+  pointer-events: none;
+  position: relative;
+}
+
+.splash {
+  animation: App-splash infinite 2s linear;
+  height: 20vmin;
+  visibility: hidden;
+  position: absolute;
+  margin-left: 220px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  50% {
+    transform: rotate(75deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes App-splash {
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+.establishment {
+    display             : flex;
+    align-items         : center;
+    background-color    : #48BAFF;
+    padding             : 10px;
+    margin              : 5px 30px;
+    border-radius       : 8px;
+    width               : 50%;
+    margin-left         : auto;
+    margin-right        : auto;
+}
+.establishment-favori {
+    flex : 0.1;
+}
+.establishment-description {
+    flex : 0.7;
+}
+.establishmentLikeDislike {
+    flex            : 0.2;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+}
+.establishmentLikeDislike button {
+    background  : none;
+    border      : none;
+    color       : white;
+}
+.establishment button {
+    background  : none;
+    border      : none;
+    color       : white;
+}
+.favoriIcon {
+    color: yellow;
+}
